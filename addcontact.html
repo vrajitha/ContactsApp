@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html> 
+ <head> 
+ <title>Add Contact</title> 
+ <link rel="stylesheet" type="text/css" href="style.css" /> 
+ </head>
+ 
+ <body bgcolor="#b09950">   
+ 
+ <h1>Application Enquiry Form</h1>
+ <!--<p>Enter your first name, last name, and email to be added to npu <strong>NPU</strong> contact list.</p> 
+ -->
+ <P>
+ Thank you for your interest in <b>NPU</b>. To receive news, notifications, and information
+about upcoming events from the Admissions office, please complete the form below.
+ </P>
+<p><B><font color="red">*</font>indicates required fields</B></p>
+<p><B>Applicant Name<font color="red">*</font></B></p>
+ <form method="post" action="addcontact.php"> 
+ <label for="ﬁrstname">First</label>
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ <label for="lastname">Last</label> <br/>
+ <input type="text" id="fname" name="ﬁrst"> 
+ &nbsp &nbsp
+ <input type="text" id="last" name="lastname"> <br/>
+ <p><label for="gender"><B>Gender<font color="red">*</font></B></label> <br/>
+ <input type="radio" name="Gender" value="Male">Male</br>
+ <input type="radio" name="Gender" value="Female">Female</p>
+ <p><B>Date of Birth (MM-DD-YYYY)<font color="red">*</font></B></p>
+ <label for="dob"></label> 
+ <input type="text" id="dob" name="dob" size="49"> 
+ <p><B>Email Address (for admissions correspondence)<font color="red">*</font></B></p>
+ <label for="email"></label> 
+ <input type="text" id="email" name="email" size="49"> 
+ <p><B>Phone(xxx-xxx-xxxx)<font color="red">*</font></B></p>
+ <label for="phone"></label> 
+ <input type="text" id="phone" name="phone" size="29"> 
+ <p><B>Country of Residence<font color="red">*</font></B></p>
+ <label for="country"></label> 
+ <input type="text" id="country" name="country" size="49"> 
+ <p><B>State of Residence(for US)</B></p>
+ <label for="state"></label> 
+ <input type="text" id="state" name="state" size="49"> 
+ <br /> 
+ <p><B>Expected Year of High School Graduation<font color="red">*</font></B></p>
+ <label for="year"></label>
+ <select id="year" name="year" style="width:150px">
+  <option value="2014" Selected>2014</option>
+  <option value="2015" >2015</option>
+  <option value="2016">2016</option>
+  <option value="2017">2017</option>
+</select>
+ <P><B>I am interested in<font color="red">*</font></B></P>
+ <label for="type"></label> 
+ <input type="radio" name="interest" value="Full">Full-time enrollment</br>
+ <input type="radio" name="interest" value="Part">Part-time enrollment</br>
+ <input type="radio" name="interest" value="Single">Single-course enrollment</br>
+ <input type="radio" name="interest" value="Unsure">Unsure</br>
+ <P><B>Questions/Comments:</B></P>
+ <label for="comment"></label>
+ <div><textarea id="comment" name="comment" style="resize:vertical" rows="5" cols="40"></textarea></div></br>
+ <input type="submit" name="Submit" value="Submit" /> 
+ </form> 
+ </body> 
+</html>
